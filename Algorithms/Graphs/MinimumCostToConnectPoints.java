@@ -65,7 +65,7 @@ public class MinimumCostToConnectPoints {
             if(parA.equals(parB))
                 return;
 
-            if(rank.get(parA) == rank.get(parB))
+            if(rank.get(parA).equals(rank.get(parB)))
             {
                 par.put(parB, parA);
                 rank.put(parA, rank.getOrDefault(parA, 0)+1);
